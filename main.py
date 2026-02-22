@@ -94,12 +94,12 @@ fieldTshooter_new = compose(fieldTrobot_new, robotTshooter)
 st.subheader("Aim Equation")
 
 st.latex(r"""
-\theta_r + \theta_s =
+\theta_{r+1} + \theta_s =
 \operatorname{atan2}(y_t - y_s(\theta_r),\; x_t - x_s(\theta_r))
 """)
 
 st.latex(r"""
-\theta_r =
+\theta_{r+1} =
 \operatorname{atan2}(y_t - y_s(\theta_r),\; x_t - x_s(\theta_r)) - \theta_s
 """)
 
