@@ -53,18 +53,18 @@ with col2:
     SHOOTER_H = st.number_input("Shooter Height", value=0.3)
 
 st.subheader("Robot Pose")
-rx = st.slider("Robot X", -2.0, 8.0, 0.0)
-ry = st.slider("Robot Y", -4.0, 4.0, 0.0)
-rtheta = st.slider("Robot yaw (deg)", -180, 180, 0)
+rx = st.number_input("Robot X", -2.0, 8.0, 0.0)
+ry = st.number_input("Robot Y", -4.0, 4.0, 0.0)
+rtheta = st.number_input("Robot yaw (deg)", -180, 180, 0)
 
 st.subheader("Shooter Offset")
-sx = st.slider("Shooter X offset", -1.0, 1.0, 0.3)
-sy = st.slider("Shooter Y offset", -1.0, 1.0, 0.2)
-stheta = st.slider("Shooter yaw (deg)", -180, 180, 0)
+sx = st.number_input("Shooter X offset", -1.0, 1.0, 0.3)
+sy = st.number_input("Shooter Y offset", -1.0, 1.0, 0.2)
+stheta = st.number_input("Shooter yaw (deg)", -180, 180, 0)
 
 st.subheader("Target")
-tx = st.slider("Target X", -2.0, 10.0, 5.0)
-ty = st.slider("Target Y", -5.0, 5.0, 1.0)
+tx = st.number_input("Target X", -2.0, 10.0, 5.0)
+ty = st.number_input("Target Y", -5.0, 5.0, 1.0)
 
 # Setup
 fieldTrobot_old = pose(rx, ry, np.deg2rad(rtheta))
