@@ -1,4 +1,4 @@
-**Offcenter Visualization**
+# Offcenter Visualization
 
 Live demo: https://offcenter-visualization.streamlit.app/
 
